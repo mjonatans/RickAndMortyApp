@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<h1><strong>Rick and Morty Character List</strong></h1>
+{%block content%}
+    <div class="columns-3 ...">
+    {% for character in characters %}
+        <strong> {{ character.getName() }}</strong>
+        <h3> {{ character.getGender() }}</h3>
+        <h3> {{ character.getStatus() }}</h3>
+        <h3> {{ character.getFirstSeen() }}</h3>
+        <img class ="w-full p-1" src="{{ character.getImageURL() }}" alt="{{ character.getName() }}">
+    {% endfor %}
+    </div>
+{%endblock%}
+</body>
+</html>

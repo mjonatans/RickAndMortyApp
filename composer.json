@@ -1,0 +1,19 @@
+{
+    "name": "markuss/rick-and-morty",
+    "autoload": {
+        "psr-4": {
+            "RickAndMorty\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Markuss",
+            "email": "mjonatans@inbox.lv"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "nikic/fast-route": "^1.3",
+        "twig/twig": "3.0"
+    }
+}
